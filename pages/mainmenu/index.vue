@@ -48,37 +48,7 @@
             </div>
             <div class="row">
                 <div class="d-inline-flex flex-row px-0 overflow-x">
-                    <cardListMenu
-                        pName ="Perumahan Sawojajar"
-                        pPrice="Rp. 700.000.000"
-                        pAddress="Jl.Danau Toba no 12, Malang Jawa Timur"
-                        pCert="SHM"
-                        pAreaGround="120"
-                        pAreaBuild="54"
-                        pBed="2"
-                        pBath="1"
-                    />
-                    <cardListMenu
-                        pName ="Perumahan Villa Puncak Tidar"
-                        pPrice="Rp. 1.200.000.000"
-                        pAddress="Jl.Puncak Tidar Blok O 12, Malang Jawa Timur"
-                        pCert="SHM"
-                        pAreaGround="120"
-                        pAreaBuild="100"
-                        pBed="4"
-                        pBath="3"
-                    />
-                    <cardListMenu
-                        pName ="Perumahan Sawojajar"
-                        pPrice="Rp. 700.000.000"
-                        pAddress="Jl. Danau Toba no 12, Malang Jawa Timur"
-                        pCert="SHM"
-                        pAreaGround="120"
-                        pAreaBuild="54"
-                        pBed="2"
-                        pBath="1"
-                    />
-
+                    <cardRecentListView :recents="LoadedRecentLists"/>
                     <div class="content">
                         <div class="clearfix mr-3"></div>
                     </div>
@@ -103,11 +73,7 @@
                             <th class="tableCell text-right" style="font-family: Roboto, sans-serif;">Scores</th>
                         </tr>
                     </thead>
-                    <tbody class="table-content" style="font-family: Roboto, sans-serif;">
-                        <scoreList />
-                        <scoreList />
-                        <scoreList />
-                    </tbody>
+                    <scoreList :scores="loadedScore"/>
                 </table>
             </div>
         </div>
@@ -123,15 +89,35 @@
     </div>
 </template>
 
+<style scoped>
+
+</style>
+
 <script>
 import bottomNavbar from '@/components/Navbar/bottomNavbar'
-import cardListMenu from '@/components/Cards/cardListMenu'
-import scoreList from '@/components/scoreList/scoreList'
+import cardRecentListView from '@/components/Cards/cardRecentListView'
+import scoreList from '@/components/score/scoreList'
 export default {
     components: {
         bottomNavbar,
-        cardListMenu,
+        cardRecentListView,
         scoreList
+    },
+    data(){
+        return{
+            loadedScore:[
+                {Rank: 1, Name:"lorem Ipsum", Score: 1000},
+                {Rank: 2, Name:"lorem Ipsum", Score: 900},
+                {Rank: 3, Name:"lorem Ipsum", Score: 800}
+            ],
+            loadedRecentLists:[
+                {pName:"lorem Ipsum",pPrice:"Rp. 123.456.789", pAddress: "Jl Lorem Ipsum no Dolor", pCert:"SHM", pAreaGround:"123",pAreaBuild:"123",pBed:"2",pBath:"3"},
+                {pName:"lorem Ipsum",pPrice:"Rp. 123.456.789", pAddress: "Jl Lorem Ipsum no Dolor", pCert:"SHM",pAreaGround:"123",pAreaBuild:"123",pBed:"2",pBath:"3"},
+                {pName:"lorem Ipsum",pPrice:"Rp. 123.456.789", pAddress: "Jl Lorem Ipsum no Dolor", pCert:"SHM",pAreaGround:"123",pAreaBuild:"123",pBed:"2",pBath:"3"},
+                {pName:"lorem Ipsum",pPrice:"Rp. 123.456.789", pAddress: "Jl Lorem Ipsum no Dolor", pCert:"SHM",pAreaGround:"123",pAreaBuild:"123",pBed:"2",pBath:"3"},
+                {pName:"lorem Ipsum",pPrice:"Rp. 123.456.789", pAddress: "Jl Lorem Ipsum no Dolor", pCert:"SHM",pAreaGround:"123",pAreaBuild:"123",pBed:"2",pBath:"3"}
+            ]
+        }
     }
 }
 </script>
