@@ -48,7 +48,7 @@
             </div>
             <div class="row">
                 <div class="d-inline-flex flex-row px-0 overflow-x">
-                    <cardRecentListView :recents="LoadedRecentLists"/>
+                    <cardRecentListView :recents="loadedRecentLists"/>
                     <div class="content">
                         <div class="clearfix mr-3"></div>
                     </div>

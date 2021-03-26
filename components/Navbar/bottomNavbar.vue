@@ -18,7 +18,7 @@
                             </div>
 
                             <div class="navItems d-flex flex-column justify-content-end align-items-center col menu">
-                                <nuxt-link to = "#">
+                                <nuxt-link to = "/profile">
                                     <img src="@/assets/img/053-user.png" width="20" height="22">
                                     <p class="small m-0 pt-1">Profile</p>
                                 </nuxt-link>
