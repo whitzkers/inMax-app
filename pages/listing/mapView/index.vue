@@ -30,7 +30,7 @@ export default {
           mapboxgl.accessToken = this.access_token
           this.map = new mapboxgl.Map({
             container: 'map',
-            style: 'mapbox://styles/mapbox/streets-v11', // style URL
+            style: 'mapbox://styles/whitzkers/ckmpzjkdy0mm017pdrnuoeilu', // style URL
             attributionControl: false,
             center: [112.634102, -7.977270], // starting position [lng, lat]
             zoom: 15 // starting zoom
