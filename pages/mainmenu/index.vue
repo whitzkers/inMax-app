@@ -46,13 +46,8 @@
                     <nuxt-link to="/listing" class="linkChallenge mt-2"  style="font-family: Roboto, sans-serif;color: #f5821f;">See All</nuxt-link>
                 </div>
             </div>
-            <div class="row">
-                <div class="d-inline-flex flex-row px-0 overflow-x">
-                    <cardRecentListView :recents="loadedRecentLists"/>
-                    <div class="content">
-                        <div class="clearfix mr-3"></div>
-                    </div>
-                </div>
+            <div class="row ">
+                <cardRecentListView  :clientList="loadedLists"/>  
             </div>
         </div>
         <div class="container py-4" id="Leaderboards" style="font-family: Roboto, sans-serif;">
@@ -90,7 +85,9 @@
 </template>
 
 <style scoped>
-
+    clientCardListView{
+        overflow-x: scroll;
+    }
 </style>
 
 <script>
@@ -110,7 +107,7 @@ export default {
                 {Rank: 2, Name:"lorem Ipsum", Score: 900},
                 {Rank: 3, Name:"lorem Ipsum", Score: 800}
             ],
-            loadedRecentLists:[
+            loadedLists:[
                 {pName:"lorem Ipsum",pPrice:"Rp. 123.456.789", pAddress: "Jl Lorem Ipsum no Dolor", pCert:"SHM", pAreaGround:"123",pAreaBuild:"123",pBed:"2",pBath:"3"},
                 {pName:"lorem Ipsum",pPrice:"Rp. 123.456.789", pAddress: "Jl Lorem Ipsum no Dolor", pCert:"SHM",pAreaGround:"123",pAreaBuild:"123",pBed:"2",pBath:"3"},
                 {pName:"lorem Ipsum",pPrice:"Rp. 123.456.789", pAddress: "Jl Lorem Ipsum no Dolor", pCert:"SHM",pAreaGround:"123",pAreaBuild:"123",pBed:"2",pBath:"3"},

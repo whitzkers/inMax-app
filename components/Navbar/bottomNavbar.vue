@@ -29,3 +29,12 @@
         </nav>
 </template>
 
+<style scoped>
+.navItems{
+    text-align: center;
+}
+p{
+    color:black
+}
+</style>
+

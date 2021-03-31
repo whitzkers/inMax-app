@@ -2,7 +2,7 @@
     <div style ="border-bottom-style:none;">
         <searchNavbar />
         <div class="row mx-0 px-2 pt-4 pb-5 mb-5">
-            <cardListingView :lists="loadLists" />
+            <cardClientListView :clientList="loadLists" />
         </div>
         <fabViewMode />
         <bottomNavbar />
@@ -10,13 +10,13 @@
 </template>
 
 <script>
-import cardListingView from '@/components/Cards/cardListingView'
+import cardClientListView from '@/components/Cards/cardClientListView'
 import bottomNavbar from '@/components/Navbar/bottomNavbar'
 import fabViewMode from '@/components/fab/fabViewMode'
 import searchNavbar from '@/components/Navbar/searchNavbar'
 export default {
     components: {
-        cardListingView,
+        cardClientListView,
         bottomNavbar,
         fabViewMode,
         searchNavbar

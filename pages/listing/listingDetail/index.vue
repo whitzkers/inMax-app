@@ -4,8 +4,8 @@
         <topNavbar navLocation = "Properti Detail"/>
         <div class="carousel slide" data-ride="carousel" id="carousel-1">
             <div class="carousel-inner">
-                <div class="carousel-item active"><img class="w-100 d-block" src="assets/img/Amazing-White-Gray-Modern-exterior-House-Design-Ideas-1024x768.jpg" alt="Slide Image"></div>
-                <div class="carousel-item image-wrapper" height="200px"><img class="w-100 d-block img-fluid" src="assets/img/Amazing-White-Gray-Modern-exterior-House-Design-Ideas-1024x768.jpg" alt="Slide Image"></div>
+                <div class="carousel-item active"><img class="w-100 d-block" src="@/assets/img/Amazing-White-Gray-Modern-exterior-House-Design-Ideas-1024x768.jpg" alt="Slide Image"></div>
+                <div class="carousel-item image-wrapper" height="200px"><img class="w-100 d-block img-fluid" src="@/assets/img/Amazing-White-Gray-Modern-exterior-House-Design-Ideas-1024x768.jpg" alt="Slide Image"></div>
                 <div class="carousel-item"><img class="w-100 d-block" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png" alt="Slide Image"></div>
                 <div class="carousel-item"><img class="w-100 d-block" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png" alt="Slide Image"></div>
             </div>
@@ -49,36 +49,7 @@
         <div class="container" style="padding:16px 16px 36px 16px;">
             <h1 style="font-size: 24px;margin-bottom: 16px;font-family: Roboto, sans-serif;">Rekomendasi</h1>
             <div class="col-md-12 offset-md-0 d-inline-flex px-0 overflow-x">
-                <cardListMenu 
-                    pName ="Perumahan Sawojajar"
-                    pPrice="Rp. 700.000.000"
-                    pAddress="Jl.Danau Toba no 12, Malang Jawa Timur"
-                    pCert="SHM"
-                    pAreaGround="120"
-                    pAreaBuild="54"
-                    pBed="2"
-                    pBath="1"
-                />
-                <cardListMenu
-                    pName ="Perumahan Sawojajar"
-                    pPrice="Rp. 700.000.000"
-                    pAddress="Jl.Danau Toba no 12, Malang Jawa Timur"
-                    pCert="SHM"
-                    pAreaGround="120"
-                    pAreaBuild="54"
-                    pBed="2"
-                    pBath="1"
-                />
-                <cardListMenu
-                    pName ="Perumahan Sawojajar"
-                    pPrice="Rp. 700.000.000"
-                    pAddress="Jl.Danau Toba no 12, Malang Jawa Timur"
-                    pCert="SHM"
-                    pAreaGround="120"
-                    pAreaBuild="54"
-                    pBed="2"
-                    pBath="1"
-                />
+                <cardRecentListView :clientList="loadedLists"/>
             </div>
         </div>
     </div>
@@ -87,12 +58,23 @@
 <script>
 import topNavbar from '@/components/Navbar/topNavbar'
 import fabEditRequest from '@/components/fab/fabEditRequest'
-import cardListMenu from '@/components/Cards/cardListing'
+import cardRecentListView from '@/components/Cards/cardRecentListView'
 export default {
     components:{
         topNavbar,
         fabEditRequest,
-        cardListMenu
+        cardRecentListView
+    },
+    data(){
+        return{
+            loadedLists:[
+                {pName:"lorem Ipsum",pPrice:"Rp. 123.456.789", pAddress: "Jl Lorem Ipsum no Dolor", pCert:"SHM", pAreaGround:"123",pAreaBuild:"123",pBed:"2",pBath:"3"},
+                {pName:"lorem Ipsum",pPrice:"Rp. 123.456.789", pAddress: "Jl Lorem Ipsum no Dolor", pCert:"SHM",pAreaGround:"123",pAreaBuild:"123",pBed:"2",pBath:"3"},
+                {pName:"lorem Ipsum",pPrice:"Rp. 123.456.789", pAddress: "Jl Lorem Ipsum no Dolor", pCert:"SHM",pAreaGround:"123",pAreaBuild:"123",pBed:"2",pBath:"3"},
+                {pName:"lorem Ipsum",pPrice:"Rp. 123.456.789", pAddress: "Jl Lorem Ipsum no Dolor", pCert:"SHM",pAreaGround:"123",pAreaBuild:"123",pBed:"2",pBath:"3"},
+                {pName:"lorem Ipsum",pPrice:"Rp. 123.456.789", pAddress: "Jl Lorem Ipsum no Dolor", pCert:"SHM",pAreaGround:"123",pAreaBuild:"123",pBed:"2",pBath:"3"}
+            ]
+        }
     }
 }
 </script>
