@@ -18,7 +18,9 @@
                     <h3 class="d-block mb-0">Komisi Saya</h3>
                     <p class="small" style="color: rgb(56,53,53);">Bulan Ini</p>
                 </div>
-                <div class="col-4 d-flex justify-content-end align-items-start" style="font-family: Roboto, sans-serif;"><a class="linkChallenge mt-2" href="#" style="font-family: Roboto, sans-serif;">Riwayat</a></div>
+                <div class="col-4 d-flex justify-content-end align-items-start" style="font-family: Roboto, sans-serif;">
+                    <nuxt-link class="linkChallenge mt-2" to="/profile/commission" style="font-family: Roboto, sans-serif;">Riwayat</nuxt-link>
+                </div>
             </div>
             <div class="row pt-2">
                 <div class="col-4">

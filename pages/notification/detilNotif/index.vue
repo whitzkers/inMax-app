@@ -6,7 +6,7 @@
                 <h1 style="font-size: 20px;font-family: Roboto, sans-serif;"><br>Nulla elementum ligula dictum massa vestibulum<br><br></h1>
             </div>
             <div style="margin: 0px auto;text-align: center;">
-                <img src="@/assets/img/iStock-889312658-e1530556874376.jpg" style="width : 80%;border-radius:8px;"></div>
+                <img src="@/assets/img/iStock-889312658-e1530556874376.jpg" style="width : 100%;border-radius:8px;"></div>
             <div style="margin-top:16px;">
                 <p style="font-family: Roboto, sans-serif;">
                     Cras faucibus, ex ac auctor maximus, libero justo luctus massa, malesuada iaculis tortor lacus eu mi. Sed blandit ipsum nec elit dignissim molestie. Proin non leo quis nulla hendrerit mattis. Suspendisse condimentum vehicula ante. Praesent lobortis enim malesuada risus sollicitudin hendrerit. Duis non justo et orci convallis facilisis. 

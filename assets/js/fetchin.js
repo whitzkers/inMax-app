@@ -3,5 +3,5 @@ fetch("@/assets/js/dummy.json")
         .then(data =>{
             const location = data;
 
-            marker1 = new mapboxgl.Marker().setLngLat([location.lng, location.lat]).addTo(map);
+            new mapboxgl.Marker().setLngLat([location.lng, location.lat]).addTo(map);
         });

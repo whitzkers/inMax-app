@@ -1,7 +1,7 @@
 <template>
     <div>
         <fabEditRequest />
-        <topNavbar navLocation = "Properti Detail"/>
+        <topNavbar navLocation = "Listing Detail"/>
         <div class="carousel slide" data-ride="carousel" id="carousel-1">
             <div class="carousel-inner">
                 <div class="carousel-item active"><img class="w-100 d-block" src="@/assets/img/Amazing-White-Gray-Modern-exterior-House-Design-Ideas-1024x768.jpg" alt="Slide Image"></div>
@@ -17,20 +17,30 @@
                 <li data-target="#carousel-1" data-slide-to="3"></li>
             </ol>
         </div>
-        <div class="container" style="padding : 16px 16px 38px 16px;">
+        <div class="container" style="padding : 16px 16px 24px 16px;">
             <h1 style="font-size: 20px;margin-bottom: 16px;font-family: Roboto, sans-serif;">Perumahan Sawojajar</h1><span class="d-inline-block" style="font-size: 20px;font-weight: bold;margin-bottom: 8px;font-family: Roboto, sans-serif;">Rp. 700.000.000</span>
             <p style="margin-bottom: 16px;color: #8c8c8c;font-family: Roboto, sans-serif;">Jl. Danau Toba no 12, Malang Jawa Timur</p>
-            <div class="d-flex justify-content-center col-12" id="amenities">
-                <div class="d-inline-flex col-3" style="padding : 0px;margin-right:8px;"><img src="@/assets/img/048-contract.svg" width="24"><span style="margin-left: 8px;font-family: Roboto, sans-serif;">SHM</span></div>
-                <div class="d-inline-flex col-3" style="padding : 0px;margin-right:8px;"><img src="@/assets/img/double-bed.svg" width="24"><span style="margin-left: 8px;font-family: Roboto, sans-serif;">2</span></div>
-                <div class="d-inline-flex col-3" style="padding : 0px;margin-right:8px;"><img src="@/assets/img/049-bathroom.svg" width="24"><span style="margin-left: 8px;font-family: Roboto, sans-serif;">1</span></div>
-                <div class="d-inline-flex col-3" style="padding : 0px;margin-right:8px;"><img src="@/assets/img/032-plan.svg" width="24"><span style="margin-left: 8px;font-size: 16px;font-family: Roboto, sans-serif;">120/54</span></div>
+            <div class="col-12 pt-1">
+                <div class="row py-2">
+                    <div class="d-flex flex-row justify-content-start align-items-center col-6 pr-1 mb-3"><img src="@/assets/img/048-contract.svg" width="17" height="17">
+                        <p class="mb-0 pl-2 small">SHM</p>
+                    </div>
+                    <div class="d-flex flex-row justify-content-start align-items-center col-6 pr-1 mb-3"><img src="@/assets/img/032-plan.svg" width="17" height="17">
+                        <p class="mb-0 pl-2 small">LT 150 / LB 100</p>
+                    </div>
+                    <div class="d-flex flex-row justify-content-start align-items-center col-6 pr-1 mb-3"><img src="@/assets/img/double-bed.svg" width="17" height="17">
+                        <p class="mb-0 pl-2 small">2</p>
+                    </div>
+                    <div class="d-flex flex-row justify-content-start align-items-center col-6 pr-1 mb-3"><img src="@/assets/img/049-bathroom.svg" width="17" height="17">
+                        <p class="mb-0 pl-2 small">2</p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="container" style="padding:16px 16px 36px 16px;">
             <h1 style="font-size: 24px;margin-bottom: 16px;font-family: Roboto, sans-serif;">Kontak Agen</h1>
             <div class="row no-gutters">
-                <div class="col col-3"><img src="@/assets/img/profilePicture.png"></div>
+                <div class="col col-3 align-items-center pt-2" style="text-align:center;"><img style="width:56px; height:56px; text" src="@/assets/img/profilePicture.png"></div>
                 <div class="col col-9" style="padding:8px;">
                     <p style="margin-bottom: 8px;font-size: 16px;font-family: Roboto, sans-serif;">John Doe</p>
                        <p style="font-family: Roboto, sans-serif;">johnDoe@inmax.com</p>

@@ -52,7 +52,7 @@
      border-top: 1px solid #85868c ;
  }
  .card {
-     
+  border: 1px solid #85868C;
   border-radius: 0.6rem;
   -webkit-box-shadow: 0px 0px 0px 0px #cac9d4;
   -moz-box-shadow: 0px 0px 0px 0px #cac9d4;

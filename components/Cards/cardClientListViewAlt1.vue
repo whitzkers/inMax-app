@@ -1,6 +1,6 @@
 <template>
-    <div >
-        <cardClientList 
+    <div>
+        <cardClientListAlt1
             v-for="list in clientList"
             :key="list.id"
             :pName="list.pName"
@@ -12,16 +12,14 @@
             :pBed="list.pBed"
             :pBath="list.pBath"
         />
-
     </div>
-    
 </template>
 
 <script>
-import cardClientList from '@/components/Cards/cardClientList'
+import cardClientListAlt1 from '@/components/Cards/cardClientListAlt1'
 export default {
     components:{
-        cardClientList
+        cardClientListAlt1
     },
     props:{
         clientList:{

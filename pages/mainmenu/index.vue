@@ -1,5 +1,6 @@
 <template>
     <div>
+        <bottomNavbar />
         <header id="headerBase" class="mb-3">
             <div class="row no-gutters row-cols-2 bg-primary">
                 <div class="col pl-3 py-4">
@@ -46,11 +47,11 @@
                     <nuxt-link to="/listing" class="linkChallenge mt-2"  style="font-family: Roboto, sans-serif;color: #f5821f;">See All</nuxt-link>
                 </div>
             </div>
-            <div class="row ">
+            <div class="row mx-0 px-2 pt-4 pb-5 mb-5 ">
                 <cardRecentListView  :clientList="loadedLists"/>  
             </div>
         </div>
-        <div class="container py-4" id="Leaderboards" style="font-family: Roboto, sans-serif;">
+        <!-- <div class="container py-4" id="Leaderboards" style="font-family: Roboto, sans-serif;">
             <div class="mb-4">
                 <div class="row row-cols-2 mb-3">
                     <div class="col-8">
@@ -71,11 +72,9 @@
                     <scoreList :scores="loadedScore"/>
                 </table>
             </div>
-        </div>
+        </div> -->
         <br />
-        <br/>
-        <br/>
-        <br/>
+     
         
         <div class="content">
             <div class="clearfix mr-3"></div>
@@ -85,9 +84,7 @@
 </template>
 
 <style scoped>
-    clientCardListView{
-        overflow-x: scroll;
-    }
+
 </style>
 
 <script>
@@ -111,8 +108,6 @@ export default {
                 {pName:"lorem Ipsum",pPrice:"Rp. 123.456.789", pAddress: "Jl Lorem Ipsum no Dolor", pCert:"SHM", pAreaGround:"123",pAreaBuild:"123",pBed:"2",pBath:"3"},
                 {pName:"lorem Ipsum",pPrice:"Rp. 123.456.789", pAddress: "Jl Lorem Ipsum no Dolor", pCert:"SHM",pAreaGround:"123",pAreaBuild:"123",pBed:"2",pBath:"3"},
                 {pName:"lorem Ipsum",pPrice:"Rp. 123.456.789", pAddress: "Jl Lorem Ipsum no Dolor", pCert:"SHM",pAreaGround:"123",pAreaBuild:"123",pBed:"2",pBath:"3"},
-                {pName:"lorem Ipsum",pPrice:"Rp. 123.456.789", pAddress: "Jl Lorem Ipsum no Dolor", pCert:"SHM",pAreaGround:"123",pAreaBuild:"123",pBed:"2",pBath:"3"},
-                {pName:"lorem Ipsum",pPrice:"Rp. 123.456.789", pAddress: "Jl Lorem Ipsum no Dolor", pCert:"SHM",pAreaGround:"123",pAreaBuild:"123",pBed:"2",pBath:"3"}
             ]
         }
     }
